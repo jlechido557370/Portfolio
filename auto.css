@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* PASSWORD SCREEN */
+.password-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Donut canvas background */
+#canvasdonut2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Password box */
+.password-box {
+    background: #1e1f22;
+    color: #f2f3f5;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.password-box input {
+    padding: 10px;
+    width: 220px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.password-screen h2 {
+    color: #ffffff;
+}
+
+.password-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* AUTOBIO CONTENT */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    display: none;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h1, h2 {
+    color: #292929;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-pic {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.profile-pic img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px; /* Makes corners rounded */
+    border: 3px solid #292929;
+}
+

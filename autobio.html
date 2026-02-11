@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Autobiography</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="auto.css">
+
+    <style>
+        .back-btn-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .back-btn-container button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PASSWORD PAGE -->
+    <div class="password-screen" id="passwordScreen">
+
+        <!-- Donut background -->
+        <canvas id="canvasdonut2"></canvas>
+
+        <!-- Password box -->
+        <div class="password-box">
+            <h2>Enter Password</h2>
+            <p>(Pass:1234)</p>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <br>
+            <button onclick="checkPassword()">Enter</button>
+        </div>
+
+    </div>
+
+    <!-- AUTOBIO CONTENT -->
+    <div class="container" id="content" style="display:none;">
+
+        
+        <h1>My Autobiography</h1>
+
+        <div class="profile-pic">
+    <img src="face.jpg" alt="My Photo">
+</div>
+
+        <p><strong>Name:</strong> Jan Michael R. Lechido</p>
+
+
+
+        <hr>
+
+        <h2>Introduction</h2>
+        <p>
+            Hello! My name is Jan Michael R. Lechido. I was born on September 28, 2005,
+            in Davao City, Philippines. This autobiography shares my life story,
+            personal experiences, and aspirations. I believe that every experience,
+            whether good or challenging, plays an important role in shaping who we become.
+        </p>
+
+        <h2>Early Life</h2>
+        <p>
+            I grew up in Davao City, where I spent most of my childhood exploring
+            my interests and discovering my talents. As a child, I enjoyed playing
+            video games, drawing, and learning new things through technology.
+            These early experiences helped develop my creativity, curiosity,
+            and problem-solving skills.
+        </p>
+
+        <h2>Education</h2>
+        <p>
+            I am currently studying at the University of Mindanao as a Bachelor of
+            Science in Information Technology (BSIT) undergraduate. My studies
+            allow me to expand my knowledge in programming, web development,
+            and computer systems. Education plays a vital role in improving my
+            technical skills and preparing me for my future career in the IT industry.
+        </p>
+
+        <h2>Hobbies & Interests</h2>
+        <p>
+            In my free time, I enjoy playing video games such as Dota 2, which
+            helps me develop strategic thinking and teamwork skills. I also create
+            art projects for income, combining creativity with entrepreneurship.
+            Through these activities, I am able to relax, improve my skills,
+            and earn extra money to support my personal goals and interests.
+        </p>
+
+        <h2>Goals & Dreams</h2>
+        <p>
+            My main goal in life is to complete my education and build a successful
+            career in the field of Information Technology. I aspire to continuously
+            improve my skills, achieve financial stability, and make a positive
+            impact on my family and community. I believe that with dedication,
+            hard work, and perseverance, I can turn my dreams into reality.
+        </p>
+
+        <hr>
+        <p><em>Thank you for reading my autobiography.</em></p>
+
+        <!-- Go Back Button -->
+        <div class="back-btn-container">
+            <button onclick="window.location.href='index.html'">Go Back</button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const correctPassword = "1234"; // CHANGE THIS
+
+        function checkPassword() {
+            const input = document.getElementById("passwordInput").value;
+            const passwordScreen = document.getElementById("passwordScreen");
+            const content = document.getElementById("content");
+
+            if (input === correctPassword) {
+                passwordScreen.style.display = "none";
+                content.style.display = "block";
+            } else {
+                alert("Wrong password!");
+            }
+        }
+    </script>
+
+</body>
+</html>

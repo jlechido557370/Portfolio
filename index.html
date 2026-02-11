@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" type="image/png" href="ivowhite.png">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="120" tabindex="0">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#welcome">
+        <img src="ivo.png" alt="Logo" class="navbar-logo" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#social-media">Socials</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- KEEP ALL YOUR SECTIONS EXACTLY THE SAME BELOW -->
+
+  <!-- =========================================================
+       WELCOME
+       ========================================================= -->
+  <section id="welcome">
+    <canvas id="canvasdonut2"></canvas>
+
+    <div class="container position-relative text-center">
+
+      <h1>Welcome to My Website</h1>
+      <p>
+        A personal space where I showcase my projects, hobbies, and passions.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT
+       ========================================================= -->
+<section id="about">
+  <div class="container">
+    <h1>About Me</h1>
+
+    <p>
+      I am a second-year Bachelor of Science in Information Technology (BSIT) 
+      student at the University of Mindanao. I am currently expanding my 
+      knowledge in programming, web development, and other technology-related 
+      fields. As an aspiring IT professional, I continuously work on improving 
+      my technical skills while exploring creative and innovative solutions 
+      in the digital space.
+    </p>
+
+    <p>
+      Beyond academics, I am passionate about building projects that strengthen 
+      both my problem-solving abilities and creativity. I believe that consistent 
+      learning, hands-on experience, and discipline are key factors in becoming 
+      successful in the technology industry.
+    </p>
+
+    <p>
+      For more personal details about my life, you can read my autobiography here →
+      <a href="autobio.html" class="btn">Read My Autobiography</a>
+    </p>
+
+    <h2>About IVO.</h2>
+
+    <p>
+      IVO. is a personal brand and digital group that represents my identity 
+      and online presence across different platforms. It started as a small 
+      Discord server that I created on September 17, 2022, originally intended 
+      as a space for my friends and me to connect and have fun.
+    </p>
+
+    <p>
+      As the community gradually grew, I began to see its potential as more than 
+      just a casual server. On October 7, 2022, I designed the official IVO. logo 
+      and started developing the server with a more structured and organized 
+      approach. Since then, I have continued refining its design, structure, 
+      and overall branding to give it a more professional identity.
+    </p>
+
+    <p>
+      Although the Discord server is currently less active, it remains open 
+      to anyone who wishes to join and be part of the IVO. community. In the 
+      future, I plan to officially establish and expand IVO. as a recognized 
+      brand, with long-term goals and projects that reflect creativity, 
+      innovation, and growth.
+    </p>
+
+    <p>
+      Join the IVO. community here → 
+      <a href="https://discord.gg/PJfdPtUZaF" target="_blank" class="btn">
+        Join IVO. Discord
+      </a>
+    </p>
+
+  </div>
+</section>
+
+
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="edu-overlay"></div>
+
+  <div class="container text-center">
+    <h1 class="education-title">Education</h1>
+
+    <div class="education-grid">
+
+      <!-- San Juan Elementary School -->
+      <div class="education-card">
+        <div class="edu-banner"></div>
+        <div class="edu-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORb5fLQAh-c-_Wwv98x4I2iuXr7PJ6LRugQ&s">
+        </div>
+        <div class="edu-name">San Juan Elementary School</div>
+        <div class="edu-description">
+          My foundation years where I developed discipline, curiosity, and basic academic skills.
+        </div>
+      </div>
+
+      <!-- Holy Cross of Agdao -->
+      <div class="education-card">
+        <div class="edu-banner"></div>
+        <div class="edu-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqct53jy_GIOuSPyNPSmJXtWi4sYB6XpP7OQ&s">
+        </div>
+        <div class="edu-name">Holy Cross of Agdao Davao City</div>
+        <div class="edu-description">
+          A formative stage that strengthened my academic foundation and personal values.
+        </div>
+      </div>
+
+      <!-- Davao City National High School -->
+      <div class="education-card">
+        <div class="edu-banner"></div>
+        <div class="edu-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7k279ZNHafMZ6L7VtQP3mCYSFu1z0xxKrAA&s">
+        </div>
+        <div class="edu-name">Davao City National High School</div>
+        <div class="edu-description">
+          Where I grew academically and socially, building confidence and leadership skills.
+        </div>
+      </div>
+
+      <!-- Assumption College of Davao -->
+      <div class="education-card">
+        <div class="edu-banner"></div>
+        <div class="edu-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWkFL9O-QDEimqxGVu0lKHmXhrTxE-j4rqbg&s">
+        </div>
+        <div class="edu-name">Assumption College of Davao</div>
+        <div class="edu-description">
+          An important chapter that refined my critical thinking and professional mindset.
+        </div>
+      </div>
+
+      <!-- University of Mindanao -->
+      <div class="education-card">
+        <div class="edu-banner"></div>
+        <div class="edu-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/University_of_Mindanao_Logo.png">
+        </div>
+        <div class="edu-name">University of Mindanao</div>
+        <div class="edu-description">
+          Currently pursuing higher education and honing my technical and professional skills.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- =========================================================
+       PROJECTS
+       ========================================================= -->
+  <section id="projects">
+    <div class="projects-layout">
+      <div class="projects-text">
+        <h1>Projects</h1>
+
+        <div class="project-item">
+          <i class="fa-solid fa-book"></i>
+          Library Management System
+        </div>
+
+        <div class="project-item">
+          <i class="fa-solid fa-code"></i>
+          Website Development Project
+        </div>
+      </div>
+
+      <div class="projects-visual">
+        <video autoplay muted loop playsinline>
+          <source src="loading.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       HOBBIES
+       ========================================================= -->
+  <section id="hobbies">
+
+
+    <div class="container">
+      <h1 class="hobbies-heading">Hobbies & Interests
+      </h1>
+
+      <!-- ================= INSTAGRAM ================= -->
+      <div class="hobby-row">
+        <h2 class="hobby-title inside">
+          <i class="fa-brands fa-instagram"></i>
+          Arts (Instagram)
+        </h2>
+
+        <div class="hobby-viewport">
+          <div class="hobby-track scroll-instagram">
+            <a href="https://www.instagram.com/p/C91vroHRtSd/" target="_blank" class="hobby-card">
+              <img src="insta1.png" />
+            </a>
+            <a href="https://www.instagram.com/p/DEZGg7hSn_2/?img_index=1" target="_blank" class="hobby-card">
+              <img src="insta2.png" />
+            </a>
+            <a href="https://www.instagram.com/p/DE8ZMJbTZyh/" target="_blank" class="hobby-card">
+              <img src="insta3.png" />
+            </a>
+            <a href="https://www.instagram.com/p/C9RX-2pR7Si/" target="_blank" class="hobby-card">
+              <img src="insta4.png" />
+            </a>
+            <a href="https://www.instagram.com/p/C9VRoDTy4vu/" target="_blank" class="hobby-card">
+              <img src="insta5.png" />
+            </a>
+            <a href="https://www.instagram.com/p/DEZGg7hSn_2/?img_index=2" target="_blank" class="hobby-card">
+              <img src="insta6.png" />
+            </a>
+            <a href="https://www.instagram.com/p/C8cU5BKvkKW/" target="_blank" class="hobby-card">
+              <img src="insta7.png" />
+            </a>
+            <a href="https://www.instagram.com/p/C8cVINnvUKa/" target="_blank" class="hobby-card">
+              <img src="insta8.png" />
+            </a>
+            <a href="https://www.instagram.com/p/C8cVNvYvrBh/" target="_blank" class="hobby-card">
+              <img src="insta9.png" />
+            </a>
+            <a href="https://www.instagram.com/p/C8cVQhZP1qj/" target="_blank" class="hobby-card">
+              <img src="insta10.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= YOUTUBE ================= -->
+      <div class="hobby-row">
+        <h2 class="hobby-title inside">
+          <i class="fa-brands fa-youtube"></i>
+          Content Creation (YouTube)
+        </h2>
+
+        <div class="hobby-viewport">
+          <div class="hobby-track scroll-youtube">
+
+            <a href="https://youtu.be/gDbLl4tV48U" target="_blank" class="hobby-card youtube-card">
+              <img src="one.png"
+                   onerror="this.src='https://img.youtube.com/vi/gDbLl4tV48U/hqdefault.jpg';" />
+              <div class="yt-title">1st Rampage</div>
+            </a>
+
+            <a href="https://youtu.be/WGshCTwjREU" target="_blank" class="hobby-card youtube-card">
+              <img src="two.png"
+                   onerror="this.src='https://img.youtube.com/vi/WGshCTwjREU/hqdefault.jpg';" />
+              <div class="yt-title">2nd Rampage</div>
+            </a>
+
+            <a href="https://youtu.be/_yieBOUhcg8" target="_blank" class="hobby-card youtube-card">
+              <img src="three.png"
+                   onerror="this.src='https://img.youtube.com/vi/_yieBOUhcg8/hqdefault.jpg';" />
+              <div class="yt-title">3rd Rampage</div>
+            </a>
+
+            <a href="https://youtu.be/adP0j1xhkIs" target="_blank" class="hobby-card youtube-card">
+              <img src="four.png"
+                   onerror="this.src='https://img.youtube.com/vi/adP0j1xhkIs/hqdefault.jpg';" />
+              <div class="yt-title">4th Rampage</div>
+            </a>
+
+            <a href="https://youtu.be/4oPB8JZ9VWw" target="_blank" class="hobby-card youtube-card">
+              <img src="five.png"
+                   onerror="this.src='https://img.youtube.com/vi/4oPB8JZ9VWw/hqdefault.jpg';" />
+              <div class="yt-title">5th Rampage</div>
+            </a>
+
+            <a href="https://youtu.be/BhRapVVQywk" target="_blank" class="hobby-card youtube-card">
+              <img src="six.png"
+                   onerror="this.src='https://img.youtube.com/vi/BhRapVVQywk/hqdefault.jpg';" />
+              <div class="yt-title">6th Rampage</div>
+            </a>
+
+            <a href="https://youtu.be/7CDEkQIUEJ4" target="_blank" class="hobby-card youtube-card">
+              <img src="layout1.png"
+                   onerror="this.src='https://img.youtube.com/vi/7CDEkQIUEJ4/hqdefault.jpg';" />
+              <div class="yt-title">GD Layout 1</div>
+            </a>
+
+            <a href="https://youtu.be/gE4BIEO5s4w" target="_blank" class="hobby-card youtube-card">
+              <img src="https://img.youtube.com/vi/gE4BIEO5s4w/maxresdefault.jpg"
+                   onerror="this.src='https://img.youtube.com/vi/gE4BIEO5s4w/hqdefault.jpg';" />
+              <div class="yt-title">GD Layout 2</div>
+            </a>
+
+            <a href="https://youtu.be/kmUYdcXMCcA" target="_blank" class="hobby-card youtube-card">
+              <img src="https://img.youtube.com/vi/kmUYdcXMCcA/maxresdefault.jpg"
+                   onerror="this.src='https://img.youtube.com/vi/kmUYdcXMCcA/hqdefault.jpg';" />
+              <div class="yt-title">Titans 3</div>
+            </a>
+
+            <a href="https://youtu.be/sZ4_eJavg-A" target="_blank" class="hobby-card youtube-card">
+              <img src="https://img.youtube.com/vi/sZ4_eJavg-A/maxresdefault.jpg"
+                   onerror="this.src='https://img.youtube.com/vi/sZ4_eJavg-A/hqdefault.jpg';" />
+              <div class="yt-title">Damnatio Titans 3</div>
+            </a>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!-- ================= EXTRA HOBBIES CARDS ================= -->
+<div class="extra-hobbies">
+
+  <!-- ROW 1 -->
+<div class="extra-card">
+  <img src="https://i.ytimg.com/vi/loduyLoyCcQ/maxresdefault.jpg" />
+  <h3>Geometry Dash</h3>
+  <p>
+    Hardest: <strong>Sakureta</strong><br>
+    Extreme Demon<br>
+  </p>
+</div>
+
+
+<div class="extra-card">
+  <img src="https://cdn.steamstatic.com/apps/dota2/images/dota_react/heroes/morphling.png" />
+  <h3>Dota 2</h3>
+  <p>
+    Highest Rank<br><strong>Ancient IV</strong><br>
+    Position 1 – Hard Carry<br>
+    <span class="sub">
+      Main Heroes: Morphling, Lina, Terrorblade
+    </span>
+  </p>
+</div>
+
+
+ <div class="extra-card">
+  <img src="https://wallpapers.com/images/high/crossfire-free-for-all-v7us5v78eax3qjxt.webp" />
+  <h3>Crossfire PH</h3>
+  <p>
+    Highest Rank<br><strong>Second Lieutenant 1st Grade</strong>
+  </p>
+</div>
+
+
+  <!-- ROW 2 -->
+<div class="extra-card">
+  <img src="https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2020/09/MLBB_Barats.jpg" />
+  <h3>Mobile Legends</h3>
+  <p>
+    Highest Rank<br><strong>Mythical Honor</strong><br>
+    Jungle Core<br>
+    <span class="sub">
+      Main Heroes: Barats, Fredrinn, Joy
+    </span>
+  </p>
+</div>
+
+
+  <div class="extra-card spotify">
+  <div class="spotify-header">
+    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" />
+    <h3>Spotify</h3>
+  </div>
+
+  <p class="spotify-title">Most listened artists<br>(as of 2/5/2026)</p>
+  <ul>
+    <li>Eraserheads — 3016</li>
+    <li>Tyler, The Creator — 2171</li>
+    <li>Kanye West — 2019</li>
+    <li>Playboi Carti — 1325</li>
+    <li>Kendrick Lamar — 1090</li>
+    <li>XXXTENTACION — 997</li>
+    <li>ゆよゆっぺ — 981</li>
+    <li>21 Savage — 967</li>
+    <li>Silent Sanctuary — 560</li>
+    <li>RADWIMPS — 543</li>
+  </ul>
+</div>
+
+
+<div class="extra-card specs">
+  <img src="https://i5.walmartimages.com/seo/Dell-Optiplex-3020-SFF-Desktop-PC-Intel-Core-i3-4130-3-1GHz-8GB-500GB-DVD-RW-Windows-10-Professional-used_0d8b98b7-1367-4ac0-9f02-ed345af6ab96.b6a35d0713567d7f37e9c9f9edafd9d3.jpeg" />
+  <h3>PC Specs</h3>
+  <p>
+    Intel Core i5-4590<br>
+    16GB DDR3 1600MHz<br>
+    Intel Integrated Graphics<br>
+    128GB SSD
+  </p>
+</div>
+
+
+  <!-- ROW 3 -->
+  <div class="extra-card">
+    <h3>Speedrunning</h3>
+    <p>No current runs </3><br><em>Planning future attempts</em></p>
+  </div>
+
+  <div class="extra-card">
+    <h3>Song Rating</h3>
+    <p>No ratings yet<br><em>Will be added soon</em></p>
+  </div>
+
+  <div class="extra-card">
+    <h3>Show Rating</h3>
+    <p>No ratings yet<br><em>TV / Streaming</em></p>
+  </div>
+
+  <!-- ROW 4 -->
+  <div class="extra-card">
+    <h3>Anime Rating</h3>
+    <p>No ratings yet<br><em>Ongoing watchlist</em></p>
+  </div>
+
+  <div class="extra-card">
+    <h3>Manga Rating</h3>
+    <p>No ratings yet<br><em>Reading casually</em></p>
+  </div>
+
+
+  
+  <div class="extra-card">
+    <h3>Movie Rating</h3>
+    <p>No ratings yet<br><em>Watching casually</em></p>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- =========================================================
+       SOCIAL MEDIA
+       ========================================================= -->
+  <section id="social-media">
+    <div class="container text-center">
+      <h2 class="social-title">Socials</h2>
+
+      <div class="social-grid">
+        <a href="https://www.facebook.com/juanmiguel.gatas" target="_blank" class="social-box facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://discord.com/users/979336550976462848" target="_blank" class="social-box discord">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+
+        <a href="https://steamcommunity.com/profiles/76561198418963273/" target="_blank" class="social-box steam">
+          <i class="fa-brands fa-steam"></i>
+        </a>
+
+        <a href="https://myanimelist.net/profile/DryLeechSeed" target="_blank" class="social-box mal">
+          MAL
+        </a>
+
+        <a href="https://www.youtube.com/@dryleechseed" target="_blank" class="social-box youtube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://www.reddit.com/user/DryLeechSeed/" target="_blank" class="social-box reddit">
+          <i class="fa-brands fa-reddit-alien"></i>
+        </a>
+
+        <a href="https://github.com/jlechido557370" target="_blank" class="social-box github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://soundcloud.com/dry-leech-seed" target="_blank" class="social-box soundcloud">
+          <i class="fa-brands fa-soundcloud"></i>
+        </a>
+
+        <a href="https://x.com/dryleechseed" target="_blank" class="social-box twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://open.spotify.com/user/315554yjwjbh4hnbiffw67ewcb5u" target="_blank" class="social-box spotify">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+
+        <a href="https://www.twitch.tv/dryleechseed" target="_blank" class="social-box twitch">
+          <i class="fa-brands fa-twitch"></i>
+        </a>
+
+        <a href="https://www.instagram.com/dryleechseed/" target="_blank" class="social-box instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://bsky.app/profile/wetleechseed.bsky.social" target="_blank" class="social-box bluesky">
+          <img src="bsky.png" alt="Bluesky" class="social-icon-img" />
+        </a>
+
+        <a href="https://www.tiktok.com/@dryleechseed" target="_blank" class="social-box tiktok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.last.fm/user/dryleechseed" target="_blank" class="social-box lastfm">
+          <i class="fa-brands fa-lastfm"></i>
+        </a>
+
+        <a href="https://www.roblox.com/users/2430096203/profile"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-box roblox">
+          <img src="roblox.png" alt="Roblox" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <p>© 2026 IVO. All Rights Reserved, University of Mindanao.</p>
+  </footer>
+
+  <!-- =========================================================
+       SCRIPTS
+       ========================================================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/shapeRenderer.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      new bootstrap.ScrollSpy(document.body, {
+        target: "#mainNavbar",
+        offset: 100
+      });
+    });
+  </script>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: "#mainNavbar",
+    offset: 120
+  });
+
+  // Force refresh on resize (fix zoom bugs)
+  window.addEventListener("resize", () => {
+    scrollSpy.refresh();
+  });
+
+});
+</script>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 150; // adjust for navbar height
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
+
+
+
+<script>
+  const cards = document.querySelectorAll(".education-card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+
+      // Optional: close other cards when one opens
+      cards.forEach(c => {
+        if (c !== card) {
+          c.classList.remove("active");
+        }
+      });
+
+      // Toggle clicked card
+      card.classList.toggle("active");
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

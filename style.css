@@ -1,0 +1,913 @@
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* prevents horizontal scroll on zoom */
+}
+section {
+  scroll-margin-top: 55px; /* prevents navbar overlap */
+}
+/* ================= NAVBAR ================= */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.navbar-logo {
+  height: 45px;
+}
+
+.navbar .nav-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #64748b;
+  padding: 8px 12px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Hover */
+.navbar .nav-link:hover {
+  color: #000;
+}
+
+/* Underline animation */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+
+
+/* Active section */
+.navbar .nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+.navbar {
+  background: #ffffff;
+}
+
+.navbar-logo {
+  height: 45px;
+  cursor: pointer; /* makes it feel clickable */
+}
+
+.navbar .nav-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #64748b;
+  position: relative;
+  transition: color 0.2s, font-weight 0.2s;
+}
+
+.navbar .nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* =========================================================
+   SECTIONS (BASE)
+   ========================================================= */
+section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  border-bottom: 10px solid #ffffff;
+}
+
+/* =========================================================
+   WELCOME
+   ========================================================= */
+#welcome {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#canvasdonut2 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+#welcome .container {
+  position: relative;
+  z-index: 1;
+}
+
+#welcome h1 {
+  font-size: 3.2rem;   /* Bigger title */
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#welcome p {
+  font-size: 1.3rem;   /* Bigger paragraph */
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+@keyframes floatWelcome {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+#welcome .container {
+  position: relative;
+  z-index: 1;
+  animation: floatWelcome 6s ease-in-out infinite;
+}
+
+
+
+/* =========================================================
+   ABOUT SECTION — ACHROMATIC PROFESSIONAL STYLE
+   ========================================================= */
+
+#about {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 100px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headings (Unified Style) */
+#about h1,
+#about h2 {
+  font-weight: 700;
+  color: #000000;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #000000;
+}
+
+#about h1 {
+  font-size: 2.8rem;
+}
+
+#about h2 {
+  font-size: 2.6rem;
+  margin-top: 60px;
+}
+
+/* Paragraphs */
+#about p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+
+/* =========================================================
+   GENERIC BUTTON (used elsewhere if needed)
+   ========================================================= */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+
+
+/* =========================================================
+   SECTION COLORS
+   ========================================================= */
+#about { background: #ffffff; }
+#education { background: #eef3f8; }
+
+#projects { background: #e6ebf1; }
+#hobbies { background: #f8fafc; }
+#social-media { background: #000000; border-bottom: none; }
+
+/* =========================================================
+   PROJECTS – SPLIT LAYOUT
+   ========================================================= */
+.projects-layout {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.projects-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.project-item {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-visual video {
+  width: 90%;
+  max-width: 720px;
+  border-radius: 24px;
+}
+
+
+
+
+/* EDUCATION */
+#education {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+
+  padding: 80px 0;
+}
+
+
+
+
+
+.education-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+/* GRID FIX — centers last row */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 40px;
+  justify-content: center;
+    align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .education-grid {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD */
+.education-card {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.education-card:hover {
+  transform: translateY(-8px);
+}
+
+/* BANNER */
+.edu-banner {
+  height: 120px;
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+/* LOGO */
+.edu-logo {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* NAME */
+.edu-name {
+  margin-top: 90px;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* DESCRIPTION (HIDDEN BY DEFAULT) */
+.edu-description {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  text-align: center;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* ACTIVE STATE */
+.education-card.active .edu-description {
+  max-height: 200px;
+  padding: 0 20px 20px;
+}
+
+/* CLICK HINT */
+.education-card::after {
+  content: "Click to view details";
+  display: block;
+  font-size: 0.75rem;
+  color: #64748b;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+
+
+
+
+/* =========================================================
+   HOBBIES – BASE
+   ========================================================= */
+#hobbies {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.hobbies-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#hobbies .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hobbies-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 60px;
+}
+
+
+.hobbies-heading {
+  display: inline-block;     /* shrink box to text */
+  background: #000;          /* black box */
+  color: white;
+  padding: 10px 26px;
+  border-radius: 10px;       /* optional: rounded corners */
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 auto 60px;       /* keep centered */
+}
+
+#hobbies .container {
+  text-align: center;
+}
+
+
+/* =========================================================
+   HOBBIES – ROWS & TITLES
+   ========================================================= */
+.hobby-row {
+  background: #000;
+  padding: 28px 24px 36px;
+  border-radius: 22px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hobby-title.inside {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================================================
+   HOBBIES – TRACK & CARDS
+   ========================================================= */
+.hobby-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.hobby-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  padding-right: 300px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.scroll-instagram {
+  animation: scrollPingPong 35s linear infinite alternate;
+}
+
+.scroll-youtube {
+  animation: scrollPingPong 25s linear infinite alternate;
+}
+
+.hobby-card {
+  flex: 0 0 260px;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid #000;
+  background: #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-6px);
+}
+
+.hobby-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================================================
+   YOUTUBE OVERLAY
+   ========================================================= */
+.youtube-card {
+  position: relative;
+  color: white;
+}
+
+.yt-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+}
+
+/* =========================================================
+   HOBBIES – SCROLLBARS
+   ========================================================= */
+.hobby-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #111;
+}
+
+.hobby-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.hobby-scroll::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 10px;
+}
+
+.hobby-scroll::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+.hobby-scroll::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+
+
+
+
+
+/* =========================================================
+   EXTRA HOBBIES – CARD GRID
+   ========================================================= */
+.extra-hobbies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 60px;
+
+  
+}
+
+
+
+
+.extra-card {
+  background: #000;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease;
+}
+
+.extra-card:hover {
+  transform: translateY(-6px);
+}
+
+.extra-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.extra-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.extra-card p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* Spotify special layout */
+.extra-card.spotify ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.spotify-title {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* PC Specs */
+.extra-card.specs p {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 992px) {
+  .extra-hobbies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .extra-hobbies {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Smaller secondary text */
+.extra-card .sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ===============================
+   SPOTIFY CARD
+   =============================== */
+
+.extra-card.spotify {
+  background: #1db954;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+
+.spotify-header h3 {
+  font-size: 2rem;   /* 👈 increase this */
+  font-weight: 800;
+  margin: 10;
+  padding: 5px;
+}
+
+
+/* Header: logo + title */
+.spotify-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.spotify-header img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* Subtitle */
+.spotify-title {
+  font-size: 1rem;
+  opacity: 0.80;
+    margin-top: -18px;   /* 👈 add this */
+  margin-bottom: 15px;
+}
+
+/* Artist list */
+.extra-card.spotify ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    margin-top: -4px;  /* 👈 add this */
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Safety: remove unwanted pseudo-elements */
+.extra-card.spotify::before,
+.extra-card.spotify::after {
+  content: none;
+}
+
+
+
+
+/* =========================================================
+   SOCIAL MEDIA
+   ========================================================= */
+
+#social-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.social-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 800;
+  display: inline-block;
+
+  /* Floating animation */
+  animation: floatTitle 10s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+/* Grid Layout */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Social Box Base */
+.social-box {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 38px;
+  text-decoration: none;
+  border: 5px solid #ffffff;
+  position: relative;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: floatXY 6s ease-in-out infinite;
+}
+
+/* Hover Grow Effect */
+.social-box:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Icon Images */
+.social-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.social-box.roblox img {
+  width: 130%;
+  height: 130%;
+}
+
+/* =========================================================
+   SOCIAL MEDIA COLORS
+   ========================================================= */
+
+.facebook { background: #1877f2; }
+.discord { background: #5865f2; }
+.steam { background: #1b2838; }
+.mal { background: #2e51a2; font-weight: bold; font-size: 22px; }
+.youtube { background: #ff0000; }
+.reddit { background: #ff4500; }
+.github { background: #000; }
+.soundcloud { background: #ff5500; }
+.twitter { background: #000; }
+.spotify { background: #1db954; }
+.twitch { background: #9146ff; }
+.instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); }
+.bluesky { background: #0a7cda; }
+.tiktok { background: #000; }
+.lastfm { background: #d51007; }
+.social-box.roblox { background: #3B5CFF; }
+
+/* =========================================================
+   FLOATING ANIMATIONS
+   ========================================================= */
+
+/* Icon Floating */
+@keyframes floatXY {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(6px, -10px); }
+  50%  { transform: translate(-4px, 8px); }
+  75%  { transform: translate(8px, 4px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Title Floating (bigger movement) */
+@keyframes floatTitle {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-2px, 1px); }
+  50%  { transform: translate(2px, -3px); }
+  75%  { transform: translate(-1px, 2px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Randomized Speeds */
+.social-box:nth-child(2n) { animation-duration: 7s; }
+.social-box:nth-child(3n) { animation-duration: 5.5s; }
+.social-box:nth-child(4n) { animation-duration: 8s; }
+.social-box:nth-child(5n) { animation-duration: 6.5s; }
+
+.social-box:nth-child(2n) { animation-delay: -2s; }
+.social-box:nth-child(3n) { animation-delay: -4s; }
+.social-box:nth-child(5n) { animation-delay: -1.5s; }
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes scrollPingPong {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes floatXY {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(4px, -12px); }
+  100% { transform: translate(0, 0); }
+}
+
+.social-box:nth-child(3n) { animation-duration: 7s; }
+.social-box:nth-child(4n) { animation-duration: 5.5s; }
+.social-box:nth-child(5n) { animation-duration: 8s; }
+.social-box:nth-child(2n) { animation-delay: -2s; }
+.social-box:nth-child(7n) { animation-delay: -4s; }
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+
